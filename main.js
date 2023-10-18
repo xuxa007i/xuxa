@@ -12,6 +12,9 @@ listaDeTeclas[contador].classList[1];
     tecla.onclick = function () {
         tocaSom ('#som_tecla_splash');
     contador = contador + 1;
+`#som_ ${instrumento}`;
+const idAudio = `#som_ ${instrumento}`;
+console.log(idAudio)
     }
     
 
