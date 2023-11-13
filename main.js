@@ -3,22 +3,22 @@ const elemento = document.querySelector(idElementoAudio);
 if(elemento === null){
 alert('Elemento não encontrado');
 }
-if (elemento && elemento.localName === 'audio'){
+if (elemento&&elemento.localName === 'audio'){
 elemento.play();
 }else {
 alert('Elemento não encontrado');
 }
 }
-const listaDeTeclas = document.querySelectorAll('.tecla')
+const listaDeTeclas = document.querySelectorAll('.tecla');
 //Estrutura de repetição - Enquanto
-for(let contador = 0; contador < listaDeTeclas.leigth;contador++){
+for(let contador = 0; contador < listaDeTeclas.length;contador++){
     const tecla = listaDeTeclas[contador];
     const instrumento = tecla.classList[1];
     const idAudio = `#som_${instrumento}`;
 
     console.log(idAudio);
 
-    tecla.onclick = function () {
+    tecla.onclick = function() {
        tocaSom(idAudio);
     };
     tecla.onkeydown = function(evento){
